@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".DetailLaptopActivity">
+
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/arrow_left_solid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/detailLaptop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Laptop"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imgLaptop"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/laptop_asus_vivobook"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/detailLaptop"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/brandName"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Brand Name"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintLeft_toRightOf="@id/imgLaptop"
+        app:layout_constraintTop_toTopOf="@id/imgLaptop"
+        />
+
+    <TextView
+        android:id="@+id/txtBrandName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ASUS Vivobook Pro 15 OLED"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/brandName"
+        app:layout_constraintStart_toEndOf="@id/imgLaptop"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtBrandName"
+        app:layout_constraintStart_toEndOf="@id/imgLaptop"
+        />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rp 25.000.000"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/price"
+        app:layout_constraintStart_toEndOf="@id/imgLaptop"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/processor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Processor"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtPrice"
+        app:layout_constraintStart_toEndOf="@id/imgLaptop"
+        />
+
+    <TextView
+        android:id="@+id/txtProcessor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="RYZEN 9 5000 HX"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/processor"
+        app:layout_constraintStart_toEndOf="@id/imgLaptop"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/graphics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Graphics"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imgLaptop"
+        app:layout_constraintStart_toStartOf="@id/imgLaptop"
+        />
+
+    <TextView
+        android:id="@+id/txtGraphics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="OLED"
+        app:layout_constraintTop_toBottomOf="@id/graphics"
+        app:layout_constraintStart_toStartOf="@id/graphics"
+        />
+
+    <TextView
+        android:id="@+id/ram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAM"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtGraphics"
+        app:layout_constraintStart_toStartOf="@id/imgLaptop"
+        />
+
+    <TextView
+        android:id="@+id/txtRam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="256 GB"
+        app:layout_constraintTop_toBottomOf="@id/ram"
+        app:layout_constraintStart_toStartOf="@id/ram"
+        />
+
+    <TextView
+        android:id="@+id/rom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROM"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtRam"
+        app:layout_constraintStart_toStartOf="@id/imgLaptop"
+        />
+
+    <TextView
+        android:id="@+id/txtRom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="256 GB"
+        app:layout_constraintTop_toBottomOf="@id/rom"
+        app:layout_constraintStart_toStartOf="@id/rom"
+        />
+
+    <TextView
+        android:id="@+id/benchmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benchmark"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtRom"
+        app:layout_constraintStart_toStartOf="@id/imgLaptop"
+        />
+
+    <TextView
+        android:id="@+id/txtBenchmark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="562846"
+        app:layout_constraintTop_toBottomOf="@id/benchmark"
+        app:layout_constraintStart_toStartOf="@id/benchmark"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

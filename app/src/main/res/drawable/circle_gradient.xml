@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna dasar lingkaran -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/mint" />
+        </shape>
+    </item>
+
+    <!-- Efek gradasi transparan pada tepi -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="50%"
+                android:centerColor="#00000000"
+            android:endColor="@color/gray"
+            android:startColor="#00000000" />
+        </shape>
+    </item>
+</layer-list>
